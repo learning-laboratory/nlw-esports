@@ -1,1 +1,28 @@
-GET http://localhost:4000/users HTTP/1.1
+
+###
+
+GET http://localhost:4000/games/ HTTP/1.1
+
+###
+
+GET http://localhost:4000/games/2e21c85d-0880-4262-8612-c872c2c11ba1/ads HTTP/1.1
+
+###
+
+POST http://localhost:4000/ads HTTP/1.1
+content-type: application/json
+
+{
+  "gameId":"b13ac0b1-3246-4854-bcf2-e03552c9e1fc",
+  "name": "MarioM3",
+  "yearsPlaying":4,
+  "discord":"mariomthree#0343",
+  "weekDays": [1,2,3],
+  "hourStart": "12:00",
+  "hourEnd": "23:03",
+  "useVoiceChannel": true
+}
+
+###
+
+GET http://localhost:4000/ads/03ca75ff-45b9-40ba-b624-283eec49f238/discord HTTP/1.1
