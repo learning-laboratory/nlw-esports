@@ -1,7 +1,7 @@
 import React from 'react';
 import { ImageBackground } from 'react-native';
 import { styles } from './styles';
-import { backgroundImage } from '../../assets/background-galaxy.png';
+import backgroundImage from '../../assets/background-galaxy.png';
 
 interface Props {
     children: React.ReactNode;
