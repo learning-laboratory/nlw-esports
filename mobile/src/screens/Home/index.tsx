@@ -7,6 +7,7 @@ import { GameCard, GameCardProps } from '../../components/GameCard';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Background } from '../../components/Background';
 import { useNavigation } from "@react-navigation/native";
+import { DuoMatch } from '../../components/DuoMatch';
 
 export function Home() {
 
@@ -18,7 +19,7 @@ export function Home() {
   }
 
   useEffect(() => {
-    fetch('http://192.168.100.100:4000/games')
+    fetch('http://192.168.100.110:4000/games')
       .then(response => response.json())
       .then(data => setGames(data));
   }, []);
