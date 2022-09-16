@@ -27,7 +27,7 @@ function App() {
       });
   }, []);
 
-  return (<div className="max-w-[1344px] mx-auto flex flex-col items-center my-20">
+  return (<div className="max-w-[1100px] mx-auto flex flex-col items-center my-20">
 
     <img className='w-[250px] mb-20' src={logo} alt="Logo" />
 
